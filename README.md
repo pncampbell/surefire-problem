@@ -18,10 +18,10 @@ When using certain dependencies bundled into a fat jar (e.g. cxf-core) surefire/
     [ERROR] Command was /bin/sh -c cd /home/paulcampbell/HMPO/surefire-problem && /usr/lib/jvm/java-11-openjdk-amd64/bin/java @/home/paulcampbell/HMPO/surefire-problem/target/surefire/surefireargs10961685891327111046 /home/paulcampbell/HMPO/surefire-problem/target/surefire 2022-04-12T16-36-01_469-jvmRun1 surefire6425831590946008469tmp surefire_01550115040662318041tmp
 
 The jvmrun file contains this error:
-    Created at 2022-04-12T16:36:02.807
-    Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Error occurred during initialization of boot layer'.
-    Created at 2022-04-12T16:36:02.809
-    Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'java.lang.module.ResolutionException: Module artifact1.BUILD contains package javax.transaction.xa, module java.transaction.xa exports package javax.transaction.xa to artifact1.BUILD'.
+        Created at 2022-04-12T16:36:02.807
+        Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Error occurred during initialization of boot layer'.
+        Created at 2022-04-12T16:36:02.809
+        Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'java.lang.module.ResolutionException: Module artifact1.BUILD contains package javax.transaction.xa, module java.transaction.xa exports package javax.transaction.xa to artifact1.BUILD'.
 
 This problem seems to have been introduced in 3.0.0.-M5 since it will work as expected using failsafe 3.0.0.-M4.
 
