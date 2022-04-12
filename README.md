@@ -3,6 +3,10 @@ project to investigate surefire forking crash under Java 11
 
 It might be Failsafe thats the actual problem ...
 
+    mvn clean install
+    
+Yields ...
+
 When using certain dependencies bundled into a fat jar (e.g. cxf-core) surefire/failsafe reports a crashed fork attempt.
 
     [INFO] BUILD FAILURE
