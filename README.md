@@ -1,5 +1,5 @@
 # surefire-problem
-project to investigate surefire forking crash
+project to investigate surefire forking crash under Java 11
 
 It might be Failsafe thats the actual problem ...
 
