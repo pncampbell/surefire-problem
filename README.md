@@ -31,5 +31,6 @@ The jvmrun file contains this error:
 This problem seems to have been introduced in 3.0.0.-M5 since it will work as expected using failsafe 3.0.0.-M4.
 
 The jar itself is runnable on command line without any problem in either case e.g.: 
-java -jar target/artifact1-BUILD.jar
+
+    java -jar target/artifact1-BUILD.jar
 
