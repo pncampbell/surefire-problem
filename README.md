@@ -5,9 +5,10 @@ It might be Failsafe thats the actual problem ...
 
     mvn clean install
     
+When using certain dependencies bundled into a fat jar (e.g. cxf-core) surefire/failsafe reports a crashed fork attempt.
 Yields ...
 
-When using certain dependencies bundled into a fat jar (e.g. cxf-core) surefire/failsafe reports a crashed fork attempt.
+
 
     [INFO] BUILD FAILURE
     [INFO] ------------------------------------------------------------------------
